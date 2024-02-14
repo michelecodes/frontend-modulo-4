@@ -1,71 +1,65 @@
-/* Estilos para o cabeçalho */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+body > header {
+    background-color: #2f3640;
+    color: aliceblue;
+    padding: 0;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Estilos para as seções */
+header li {
+    display: flex;
+}
+
+header li a{
+    color: aliceblue;
+}
+
+.container { 
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    height: 180px;
+}
+
+.articles article {
+    width: 33%;
+}
+
 section {
-    margin-bottom: 30px;
+    padding: 16px 0
 }
 
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+section h2 ,
+.articles article {
+    margin-bottom: 16px;
 }
 
-article {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-article img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-article h3 {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-article p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-article a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-article a:hover {
-    text-decoration: underline;
+.articles article a {
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;
 }
